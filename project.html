@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Link with Image</title>
+<style>
+  /* Style for the link */
+  .simple-link {
+    display: inline-block; /* Display as block to have padding and margin */
+    padding: 10px 20px; /* Add padding for better clickability */
+    background-color: #007bff; /* Blue color for background */
+    color: #fff; /* White color for text */
+    text-decoration: none; /* Remove default underline */
+    border-radius: 5px; /* Add rounded corners */
+  }
+
+  /* Style for link hover state */
+  .simple-link:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+  }
+
+  /* Style for the image */
+  .image-container {
+    margin-top: 10px;
+    display: none; /* Initially hide the image container */
+  }
+</style>
+</head>
+<body>
+
+<!-- Link with class "simple-link" -->
+<a href="#" class="simple-link" onclick="showImage()">Visit Example.com</a>
+
+<!-- Image container with img tag -->
+<div class="image-container" id="imageContainer">
+  <img src="D:\Colorful Creative Watercolor Floral Free Wedding Invitation Card (2).png" alt="Example Image">
+</div>
+
+<script>
+  function showImage() {
+    // Show the image container
+    document.getElementById("imageContainer").style.display = "block";
+  }
+</script>
+
+</body>
+</html>
